@@ -68,6 +68,7 @@ export default function SidePanel({
     if (!formData.phone.trim()) newErrors.phone = "Phone is required"
     if (!formData.skills.trim()) newErrors.skills = "Skills are required"
     if (formData.experience < 0)
+      //@ts-ignore
       newErrors.experience = "Experience must be positive"
 
     setErrors(newErrors)
